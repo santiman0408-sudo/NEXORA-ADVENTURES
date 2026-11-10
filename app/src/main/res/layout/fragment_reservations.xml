@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nexora_background">
+
+    <!-- ====================================== -->
+    <!-- CONTENIDO PRINCIPAL                    -->
+    <!-- ====================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITULO -->
+
+        <TextView
+            android:id="@+id/txtTituloReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de reservas"
+            android:textColor="@color/nexora_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- DESCRIPCION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Administra las experiencias turísticas de tus clientes."
+            android:textColor="@color/nexora_text"
+            android:textSize="14sp" />
+
+        <!-- SEPARADOR -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#DCE5E1" />
+
+        <!-- CONTENEDOR DEL LISTADO -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- LISTADO DE RESERVAS -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReservations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="85dp"
+                android:scrollbars="vertical" />
+
+            <!-- MENSAJE CUANDO NO EXISTEN RESERVAS -->
+
+            <TextView
+                android:id="@+id/txtSinReservas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Todavía no existen reservas registradas."
+                android:textColor="@color/nexora_text"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- ====================================== -->
+    <!-- BOTON FLOTANTE NUEVA RESERVA           -->
+    <!-- ====================================== -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNuevaReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:contentDescription="Registrar nueva reserva"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/nexora_secondary"
+        app:tint="@color/nexora_text_light" />
+
+</FrameLayout>

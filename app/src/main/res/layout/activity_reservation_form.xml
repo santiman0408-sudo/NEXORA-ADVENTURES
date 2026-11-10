@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nexora_background">
+
+    <!-- BARRA SUPERIOR -->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/nexora_primary"
+        app:title="Nueva reserva"
+        app:titleTextColor="@color/nexora_text_light"
+        app:navigationIconTint="@color/nexora_text_light"/>
+
+    <!-- CONTENEDOR DESPLAZABLE -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- TÍTULO -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos de la reserva"
+                android:textColor="@color/nexora_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:text="Completa la información del cliente y su experiencia turística."
+                android:textColor="@color/nexora_text"
+                android:textSize="14sp"/>
+
+            <!-- NOMBRE DEL CLIENTE -->
+
+            <EditText
+                android:id="@+id/etNombreCliente"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Nombre completo del cliente"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- TELÉFONO -->
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Teléfono de contacto"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- DESTINO TURÍSTICO -->
+
+            <EditText
+                android:id="@+id/etDestino"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Destino turístico"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- FECHA DEL VIAJE -->
+
+            <EditText
+                android:id="@+id/etFechaViaje"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Fecha del viaje (DD/MM/AAAA)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- CANTIDAD DE PERSONAS -->
+
+            <EditText
+                android:id="@+id/etCantidadPersonas"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Cantidad de personas"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- PUNTO DE ENCUENTRO -->
+
+            <EditText
+                android:id="@+id/etPuntoEncuentro"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/nexora_primary"
+                android:hint="Punto de encuentro"
+                android:inputType="textCapSentences"
+                android:padding="12dp"
+                android:textColor="@color/nexora_text"
+                android:textColorHint="#777777"
+                android:textSize="15sp"/>
+
+            <!-- ESTADO DE LA RESERVA -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Estado de la reserva"
+                android:textColor="@color/nexora_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerEstadoReserva"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/nexora_primary"/>
+
+            <!-- BOTONES DE ACCIÓN -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancelarReserva"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:text="CANCELAR"
+                    android:textColor="@color/nexora_primary"
+                    app:backgroundTint="@color/nexora_surface"
+                    app:strokeColor="@color/nexora_primary"
+                    app:strokeWidth="1dp"
+                    app:cornerRadius="10dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGuardarReserva"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="REGISTRAR"
+                    android:textColor="@color/nexora_text_light"
+                    app:backgroundTint="@color/nexora_primary"
+                    app:cornerRadius="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

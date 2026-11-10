@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/nexora_primary"
+    android:padding="16dp">
+
+    <!-- Logotipo de NEXORA -->
+    <ImageView
+        android:id="@+id/imgHeaderLogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_nexora_logo"
+        android:contentDescription="Logo NEXORA ADVENTURES"
+        android:scaleType="fitCenter" />
+
+    <!-- Nombre de la empresa -->
+    <TextView
+        android:id="@+id/txtHeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXORA ADVENTURES"
+        android:textColor="@color/nexora_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Eslogan corporativo -->
+    <TextView
+        android:id="@+id/txtHeaderSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explora. Descubre. Vive."
+        android:textColor="@color/nexora_secondary"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

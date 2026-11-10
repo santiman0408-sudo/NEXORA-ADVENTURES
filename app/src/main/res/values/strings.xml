@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ====================================== -->
+    <!-- 1. IDENTIDAD DE LA APLICACIÓN          -->
+    <!-- ====================================== -->
+
+    <string name="app_name">NEXORA ADVENTURES</string>
+
+    <string name="company_name">NEXORA ADVENTURES</string>
+    <string name="company_slogan">Explora. Descubre. Vive.</string>
+
+
+    <!-- ====================================== -->
+    <!-- 2. NAVEGACIÓN                          -->
+    <!-- ====================================== -->
+
+    <string name="navigation_drawer_open">
+        Abrir menú de navegación
+    </string>
+
+    <string name="navigation_drawer_close">
+        Cerrar menú de navegación
+    </string>
+
+
+    <!-- ====================================== -->
+    <!-- 3. PANTALLA DE INICIO                  -->
+    <!-- ====================================== -->
+
+    <string name="home_welcome">
+        ¡Bienvenido a NEXORA ADVENTURES!
+    </string>
+
+    <string name="home_description">
+        Descubre nuevos destinos y vive experiencias inolvidables con nosotros.
+    </string>
+
+    <string name="home_tagline">
+        Explora. Descubre. Vive.
+    </string>
+
+
+    <!-- ====================================== -->
+    <!-- 4. CATÁLOGO TURÍSTICO                  -->
+    <!-- ====================================== -->
+
+    <string name="destinations_title">Destinos turísticos</string>
+
+    <string name="destinations_description">
+        Descubre lugares extraordinarios del Perú y vive nuevas experiencias.
+    </string>
+
+    <string name="destinations_available">DESTINOS DISPONIBLES</string>
+
+    <string name="destination_search_hint">
+        Buscar destino turístico
+    </string>
+
+    <string name="destination_view_detail">VER DETALLE</string>
+
+
+    <!-- ====================================== -->
+    <!-- 5. RESERVAS                            -->
+    <!-- ====================================== -->
+
+    <string name="reservations_title">Gestión de reservas</string>
+
+    <string name="reservations_description">
+        Registra y consulta tus próximas experiencias turísticas.
+    </string>
+
+    <string name="reservation_pending">PENDIENTE</string>
+    <string name="reservation_confirmed">CONFIRMADO</string>
+    <string name="reservation_finished">FINALIZADO</string>
+
+
+    <!-- ====================================== -->
+    <!-- 6. MAPA Y UBICACIÓN                    -->
+    <!-- ====================================== -->
+
+    <string name="map_title">Mapa y ubicación</string>
+
+    <string name="map_description">
+        Consulta los puntos de encuentro de tus aventuras.
+    </string>
+
+
+    <!-- ====================================== -->
+    <!-- 7. INFORMACIÓN GENERAL                 -->
+    <!-- ====================================== -->
+
+    <string name="company_history">Nuestra historia</string>
+    <string name="company_mission">Misión</string>
+    <string name="company_vision">Visión</string>
+    <string name="company_values">Nuestros valores</string>
+    <string name="company_services">Nuestros servicios</string>
+
+
+    <!-- ====================================== -->
+    <!-- 8. CONTACTO                            -->
+    <!-- ====================================== -->
+
+    <string name="contacts_title">Contactos</string>
+    <string name="contact_name">Nombre completo</string>
+    <string name="contact_email">Correo electrónico</string>
+    <string name="contact_phone">Teléfono</string>
+    <string name="contact_subject">Asunto</string>
+    <string name="contact_message">Mensaje</string>
+    <string name="contact_send">ENVIAR MENSAJE</string>
+
+
+    <!-- ====================================== -->
+    <!-- 9. INICIO DE SESIÓN                    -->
+    <!-- ====================================== -->
+
+    <string name="login_title">Bienvenido a NEXORA</string>
+    <string name="login_email">Correo electrónico</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_button">INICIAR SESIÓN</string>
+    <string name="login_demo">Acceso de demostración</string>
+
+
+    <!-- ====================================== -->
+    <!-- 10. MENSAJES GENERALES                 -->
+    <!-- ====================================== -->
+
+    <string name="button_back">VOLVER</string>
+    <string name="button_cancel">CANCELAR</string>
+    <string name="button_save">GUARDAR</string>
+    <string name="button_delete">ELIMINAR</string>
+
+
+    <!-- ====================================== -->
+    <!-- 11. CONFIRMACIÓN DE CIERRE DE SESIÓN   -->
+    <!-- ====================================== -->
+
+    <string name="logout_confirmation_title">Cerrar sesión</string>
+
+    <string name="logout_confirmation_message">
+        ¿Estás seguro de que deseas cerrar sesión?
+    </string>
+
+    <string name="logout_cancel">Cancelar</string>
+
+    <string name="logout_confirm">Cerrar sesión</string>
+admin
+
+</resources>

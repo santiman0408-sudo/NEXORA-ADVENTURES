@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/nexora_surface">
+
+    <!-- TÍTULO DE CONFIRMACIÓN -->
+
+    <TextView
+        android:id="@+id/txtTituloEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar reserva"
+        android:textColor="@color/nexora_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- MENSAJE DE CONFIRMACIÓN -->
+
+    <TextView
+        android:id="@+id/txtMensajeEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="¿Deseas eliminar esta reserva?"
+        android:textColor="@color/nexora_text"
+        android:textSize="15sp"/>
+
+    <!-- CONTENEDOR DE BOTONES -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:weightSum="2">
+
+        <!-- BOTÓN CANCELAR -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelarEliminar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="CANCELAR"
+            android:textColor="@color/nexora_primary"
+            android:textSize="12sp"
+            app:backgroundTint="@color/nexora_surface"
+            app:strokeColor="@color/nexora_primary"
+            app:strokeWidth="1dp"
+            app:cornerRadius="10dp"/>
+
+        <!-- BOTÓN ELIMINAR -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmarEliminar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="ELIMINAR"
+            android:textColor="@color/nexora_text_light"
+            android:textSize="12sp"
+            app:backgroundTint="@color/nexora_primary"
+            app:cornerRadius="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nexora_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- IMAGEN DEL DESTINO -->
+
+        <ImageView
+            android:id="@+id/imgDetailDestination"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:background="#E8EFEC"
+            android:contentDescription="Fotografía del destino turístico"/>
+
+        <!-- CATEGORÍA -->
+
+        <TextView
+            android:id="@+id/txtDetailCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turismo cultural"
+            android:textColor="@color/nexora_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- NOMBRE DEL DESTINO -->
+
+        <TextView
+            android:id="@+id/txtDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Machu Picchu"
+            android:textColor="@color/nexora_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <!-- UBICACIÓN -->
+
+        <TextView
+            android:id="@+id/txtDetailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cusco, Perú"
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- PRECIO -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/nexora_surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRECIO REFERENCIAL"
+                    android:textColor="@color/nexora_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtDetailPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S/ 250.00"
+                    android:textColor="@color/nexora_primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- DESCRIPCIÓN -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPCIÓN"
+            android:textColor="@color/nexora_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del destino turístico."
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- DURACIÓN -->
+
+        <TextView
+            android:id="@+id/txtDetailDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duración: 1 día"
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:layout_marginTop="18dp"/>
+
+        <!-- DIFICULTAD -->
+
+        <TextView
+            android:id="@+id/txtDetailDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dificultad: Moderado"
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- PUNTO DE ENCUENTRO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUNTO DE ENCUENTRO"
+            android:textColor="@color/nexora_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailMeetingPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación del encuentro"
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ACTIVIDADES -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDADES DISPONIBLES"
+            android:textColor="@color/nexora_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividades del destino"
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- BOTÓN RESERVAR DESTINO -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReserveDestination"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="RESERVAR ESTE DESTINO"
+            android:textColor="@color/nexora_text"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="26dp"
+            app:backgroundTint="@color/nexora_secondary"
+            app:cornerRadius="12dp"/>
+
+        <!-- BOTÓN VOLVER -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackToCatalog"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="VOLVER AL CATÁLOGO"
+            android:textColor="@color/nexora_text_light"
+            android:textStyle="bold"
+            android:backgroundTint="@color/nexora_primary"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

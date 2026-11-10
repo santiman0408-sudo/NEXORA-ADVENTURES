@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="12dp"
+
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E7E4"
+    app:cardBackgroundColor="@color/nexora_surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- CLIENTE Y ESTADO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtCliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre del cliente"
+                android:textColor="@color/nexora_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="PENDIENTE"
+                android:textColor="@color/nexora_text_light"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- DESTINO -->
+
+        <TextView
+            android:id="@+id/txtDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Destino turístico"
+            android:textColor="@color/nexora_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- FECHA -->
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Fecha: 20/12/2026"
+            android:textColor="@color/nexora_text"
+            android:textSize="13sp" />
+
+        <!-- PERSONAS -->
+
+        <TextView
+            android:id="@+id/txtPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Personas: 2"
+            android:textColor="@color/nexora_text"
+            android:textSize="13sp" />
+
+        <!-- TELEFONO -->
+
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Teléfono: 999111222"
+            android:textColor="@color/nexora_text"
+            android:textSize="13sp" />
+
+        <!-- PUNTO DE ENCUENTRO -->
+
+        <TextView
+            android:id="@+id/txtPuntoEncuentro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Punto de encuentro"
+            android:textColor="@color/nexora_text"
+            android:textSize="13sp" />
+
+        <!-- BOTONES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="EDITAR"
+                android:textSize="11sp"
+                android:textColor="@color/nexora_primary"
+                app:backgroundTint="@color/nexora_background"
+                app:cornerRadius="9dp"
+                app:strokeColor="@color/nexora_primary"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:text="ELIMINAR"
+                android:textSize="11sp"
+                android:textColor="@color/nexora_text_light"
+                app:backgroundTint="@color/nexora_primary"
+                app:cornerRadius="9dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

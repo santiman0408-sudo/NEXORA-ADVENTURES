@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/nexora_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Bienvenida -->
+        <TextView
+            android:id="@+id/txtHomeWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Bienvenido a NEXORA ADVENTURES!"
+            android:textColor="@color/nexora_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Eslogan -->
+        <TextView
+            android:id="@+id/txtHomeSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explora. Descubre. Vive."
+            android:textColor="@color/nexora_secondary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descubre nuevos destinos y vive experiencias inolvidables con nosotros."
+            android:textColor="@color/nexora_text"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Tarjeta de destinos -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDestinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/nexora_surface"
+            app:strokeColor="#E0E8E4"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESTINOS TURÍSTICOS"
+                    android:textColor="@color/nexora_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Conoce nuestros destinos, paisajes y actividades de aventura."
+                    android:textColor="@color/nexora_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tarjeta de reservas -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardReservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/nexora_surface"
+            app:strokeColor="#E0E8E4"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GESTIÓN DE RESERVAS"
+                    android:textColor="@color/nexora_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registra y consulta tus próximas experiencias turísticas."
+                    android:textColor="@color/nexora_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tarjeta de ubicación -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/nexora_surface"
+            app:strokeColor="#E0E8E4"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAPA Y UBICACIÓN"
+                    android:textColor="@color/nexora_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consulta los puntos de encuentro de tus aventuras."
+                    android:textColor="@color/nexora_text"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Pie de pantalla -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXORA ADVENTURES - Explora. Descubre. Vive."
+            android:textColor="@color/nexora_primary"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nexora_background">
+
+    <!-- TÍTULO DEL MÓDULO -->
+
+    <TextView
+        android:id="@+id/txtTituloMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mapa y ubicación turística"
+        android:textColor="@color/nexora_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="6dp" />
+
+    <!-- DESCRIPCIÓN -->
+
+    <TextView
+        android:id="@+id/txtDescripcionMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explora nuestros destinos y puntos de encuentro."
+        android:textColor="#263238"
+        android:textSize="14sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="6dp" />
+
+    <!-- LEYENDA DE RUTAS -->
+
+    <TextView
+        android:id="@+id/txtLeyendaRutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Línea naranja: trazado referencial entre puntos geográficos."
+        android:textColor="#607D8B"
+        android:textSize="12sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp" />
+
+    <!-- CONTENEDOR DEL MAPA -->
+
+    <FrameLayout
+        android:id="@+id/contenedorMapa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- MAPA MAPLIBRE -->
+
+        <org.maplibre.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- BOTÓN FLOTANTE DE UBICACIÓN -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMiUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="18dp"
+            android:contentDescription="Mostrar mi ubicación actual"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:backgroundTint="@color/nexora_secondary"
+            app:tint="@android:color/white"
+            app:elevation="6dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

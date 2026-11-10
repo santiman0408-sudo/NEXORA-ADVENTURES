@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/splashContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/nexora_primary">
+
+    <LinearLayout
+        android:id="@+id/splashContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:padding="24dp">
+
+        <!-- LOGOTIPO -->
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+
+            android:src="@drawable/ic_nexora_logo"
+
+            android:contentDescription="Logotipo de NEXORA ADVENTURES"
+
+            android:scaleType="fitCenter" />
+
+        <!-- NOMBRE DE LA EMPRESA -->
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            android:text="NEXORA"
+            android:textColor="@color/nexora_text_light"
+
+            android:textSize="34sp"
+            android:textStyle="bold"
+
+            android:letterSpacing="0.12"
+            android:gravity="center" />
+
+        <!-- SUBTÍTULO -->
+
+        <TextView
+            android:id="@+id/txtAdventures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+
+            android:text="ADVENTURES"
+            android:textColor="@color/nexora_secondary"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:letterSpacing="0.22"
+            android:gravity="center" />
+
+        <!-- ESLOGAN -->
+
+        <TextView
+            android:id="@+id/txtEslogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            android:text="Explora. Descubre. Vive."
+            android:textColor="@color/nexora_text_light"
+
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <!-- BIENVENIDA -->
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:text="Tu aventura comienza aquí."
+            android:textColor="@color/nexora_text_light"
+
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- BARRA DE PROGRESO -->
+
+        <ProgressBar
+            android:id="@+id/progressSplash"
+
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:layout_width="145dp"
+            android:layout_height="5dp"
+
+            android:layout_marginTop="35dp"
+
+            android:indeterminate="true"
+
+            android:indeterminateTint="@color/nexora_secondary" />
+
+    </LinearLayout>
+
+</FrameLayout>

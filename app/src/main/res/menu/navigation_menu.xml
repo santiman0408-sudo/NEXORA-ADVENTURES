@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Opciones principales de navegación -->
+    <group android:checkableBehavior="single">
+
+        <!-- Pantalla de inicio -->
+        <item
+            android:id="@+id/nav_home"
+            android:title="Inicio" />
+
+        <!-- Catálogo de destinos -->
+        <item
+            android:id="@+id/nav_destinations"
+            android:title="Destinos turísticos" />
+
+        <!-- Administración de reservas -->
+        <item
+            android:id="@+id/nav_reservations"
+            android:title="Reservas" />
+
+        <!-- Administración de trabajadores -->
+        <item
+            android:id="@+id/nav_workers"
+            android:title="Trabajadores" />
+
+        <!-- Ubicación y Google Maps -->
+        <item
+            android:id="@+id/nav_map"
+            android:title="Mapa y ubicación" />
+
+        <!-- Información de la empresa -->
+        <item
+            android:id="@+id/nav_about"
+            android:title="Nosotros" />
+
+        <!-- Formulario de contacto -->
+        <item
+            android:id="@+id/nav_contacts"
+            android:title="Contactos" />
+
+    </group>
+
+    <!-- Opción independiente para cerrar sesión -->
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar sesión" />
+
+</menu>

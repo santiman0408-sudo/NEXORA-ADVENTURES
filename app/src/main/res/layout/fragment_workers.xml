@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nexora_background">
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:id="@+id/txtTituloTrabajadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de trabajadores"
+            android:textColor="@color/nexora_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- DESCRIPCIÓN -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Administra el personal y la información laboral de NEXORA ADVENTURES."
+            android:textColor="@color/nexora_text"
+            android:textSize="14sp"/>
+
+        <!-- INDICADORES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="@color/nexora_surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trabajadores"
+                        android:textColor="@color/nexora_text"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/txtTotalTrabajadores"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textColor="@color/nexora_primary"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="@color/nexora_surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Planilla mensual"
+                        android:textColor="@color/nexora_text"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/txtPlanillaMensual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="S/ 0.00"
+                        android:textColor="@color/nexora_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- SEPARADOR -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#DCE5E1"/>
+
+        <!-- LISTADO -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWorkers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="85dp"
+                android:scrollbars="vertical"/>
+
+            <!-- MENSAJE SIN TRABAJADORES -->
+
+            <TextView
+                android:id="@+id/txtSinTrabajadores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Todavía no hay trabajadores registrados."
+                android:textColor="@color/nexora_text"
+                android:textSize="15sp"
+                android:visibility="visible"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- BOTÓN NUEVO TRABAJADOR -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNuevoTrabajador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:contentDescription="Registrar nuevo trabajador"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/nexora_secondary"
+        app:tint="@color/nexora_text_light"/>
+
+</FrameLayout>

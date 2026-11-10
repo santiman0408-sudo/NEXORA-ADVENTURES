@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nexora_background">
+
+    <!-- Encabezado del catálogo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/txtDestinationsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destinos turísticos"
+            android:textColor="@color/nexora_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtDestinationsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descubre lugares extraordinarios del Perú y vive nuevas experiencias."
+            android:textColor="@color/nexora_text"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Campo de búsqueda -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSearchDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar destino turístico"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        app:boxBackgroundMode="outline"
+        app:startIconDrawable="@android:drawable/ic_menu_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearchDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/nexora_text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/txtAvailableDestinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESTINOS DISPONIBLES"
+        android:textColor="@color/nexora_primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Lista de destinos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDestinations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

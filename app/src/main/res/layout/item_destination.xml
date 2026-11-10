@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="14dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/nexora_surface"
+    app:strokeColor="#E0E8E4"
+    app:strokeWidth="1dp">
+
+    <!-- Contenido de la tarjeta -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="170dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Imagen del destino -->
+        <ImageView
+            android:id="@+id/imgDestination"
+            android:layout_width="116dp"
+            android:layout_height="170dp"
+            android:background="#E8EFEC"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Imagen del destino turístico"
+            android:scaleType="centerCrop" />
+
+        <!-- Información del destino -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/txtDestinationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Machu Picchu"
+                android:textColor="@color/nexora_primary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Ubicación -->
+            <TextView
+                android:id="@+id/txtDestinationLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cusco, Perú"
+                android:textColor="@color/nexora_text"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp" />
+
+            <!-- Categoría -->
+            <TextView
+                android:id="@+id/txtDestinationCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turismo cultural"
+                android:textColor="@color/nexora_secondary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+
+            <!-- Precio -->
+            <TextView
+                android:id="@+id/txtDestinationPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S/ 250.00"
+                android:textColor="@color/nexora_primary"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <!-- Duración -->
+            <TextView
+                android:id="@+id/txtDestinationDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duración: 1 día"
+                android:textColor="@color/nexora_text"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Dificultad -->
+            <TextView
+                android:id="@+id/txtDestinationDifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dificultad: Moderado"
+                android:textColor="@color/nexora_text"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Botón de detalle -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewDestination"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="VER DETALLE"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/nexora_text_light"
+                android:backgroundTint="@color/nexora_primary"
+                android:layout_marginTop="8dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

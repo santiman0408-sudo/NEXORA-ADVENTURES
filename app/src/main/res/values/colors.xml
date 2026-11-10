@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nexora_primary">#174B43</color>
+    <color name="nexora_primary_dark">#10362F</color>
+    <color name="nexora_secondary">#F28C28</color>
+
+    <color name="nexora_background">#F7F9F7</color>
+    <color name="nexora_surface">#FFFFFF</color>
+    <color name="nexora_text">#263238</color>
+    <color name="nexora_text_light">#FFFFFF</color>
+
+    <color name="nexora_error">#B3261E</color>
+    <color name="nexora_success">#21865B</color>
+
+</resources>

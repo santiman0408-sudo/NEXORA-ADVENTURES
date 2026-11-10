@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="150"
+    android:viewportHeight="150">
+
+    <!-- Fondo circular -->
+    <path
+        android:fillColor="#10362F"
+        android:pathData="M75,5 A70,70 0,1 1 75,145 A70,70 0,1 1 75,5"/>
+
+    <!-- Montaña principal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,105 L60,45 L100,105 Z"/>
+
+    <!-- Montaña secundaria -->
+    <path
+        android:fillColor="#F28C28"
+        android:pathData="M65,105 L105,60 L135,105 Z"/>
+
+    <!-- Base -->
+    <path
+        android:fillColor="#174B43"
+        android:pathData="M20,110 L130,110 L130,120 L20,120 Z"/>
+
+</vector>
